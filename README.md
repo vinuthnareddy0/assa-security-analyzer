@@ -16,6 +16,8 @@ Run `node --test tests/scanner.test.mjs` to check domain filtering and finding g
 
 ASSA uses the Site's ChatGPT sign-in for real users. The deployment's `ASSA_ADMIN_EMAIL` environment variable identifies the owner who initializes the admin role. An admin adds tester and client email addresses in **Team workspace → People**. The site owner also shares the private Site with those addresses. Assessments and projects live in D1; clients see only projects assigned to their signed-in email and their associated reports. Testers see team work and update project progress. Admins review project requests, manage team members, and create projects.
 
+**Usage of AI
+
 The three example IDs on `/team` open a local demo role. They are not password accounts. Demo changes remain in that browser's storage and never reach production project records.
 
 Project status changes, assessment starts, completions, and failures are recorded as timeline events. A completed run linked to a project appears in its assigned client view. Live reports include scope, method, observed pages, timestamps, evidence, and a printable summary.
